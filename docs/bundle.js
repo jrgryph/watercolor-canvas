@@ -27,18 +27,18 @@ var ctx = _sketchJs2.default.create({
 });
 
 var settings = {
-  colors: 3,
-  shapePoints: 5,
-  spread: 450,
-  colorSize: 300,
-  deformations: 2,
-  layers: 55,
-  randomSeed: randomSeed(), // update the randomSeed value to call the randomSeed() function
-  sigma: 2,
-  blend: 'lighten',
-  mask: true,
-  maskCircles: 300,
-  maskCircleSize: 50
+  colors: randomInt(2, 6), // generate a random integer between 2 and 6 for the colors setting
+  shapePoints: randomInt(3, 8), // generate a random integer between 3 and 8 for the shapePoints setting
+  spread: randomInt(400, 500), // generate a random integer between 400 and 500 for the spread setting
+  colorSize: randomInt(200, 400), // generate a random integer between 200 and 400 for the colorSize setting
+  deformations: randomInt(1, 3), // generate a random integer between 1 and 3 for the deformations setting
+  layers: randomInt(40, 70), // generate a random integer between 40 and 70 for the layers setting
+  randomSeed: randomSeed(), // generate a random seed using the randomSeed() function
+  sigma: randomInt(1, 4), // generate a random integer between 1 and 4 for the sigma setting
+  blend: randomElement(['lighten', 'darken', 'multiply', 'overlay']), // choose a random element from an array of blend modes for the blend setting
+  mask: randomBoolean(), // generate a random boolean value for the mask setting
+  maskCircles: randomInt(200, 400), // generate a random integer between 200 and 400 for the maskCircles setting
+  maskCircleSize: randomInt(20, 80) // generate a random integer between 20 and 80 for the maskCircleSize setting
 };
 
 var rand = void 0;
