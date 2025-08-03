@@ -33,7 +33,7 @@ var settings = {
   colorSize: 300,
   deformations: 2,
   layers: 55,
-  randomSeed: 16,
+  randomSeed: randomSeed(), // update the randomSeed value to call the randomSeed() function
   sigma: 2,
   blend: 'lighten',
   mask: true,
